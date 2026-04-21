@@ -15,6 +15,9 @@ namespace KOS
 		KOSWindow(std::string windowName, int w, int h);
 		~KOSWindow();
 
+		KOSWindow(const KOSWindow&) = delete;
+		KOSWindow& operator=(const KOSWindow) = delete;
+
 		bool ShouldClose() { return glfwWindowShouldClose(window); }
 
 	private:

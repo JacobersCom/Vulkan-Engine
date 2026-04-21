@@ -12,6 +12,6 @@ public:
 	void run();
 
 private:
-
+	//KOSWindow resource initialization
 	KOS::KOSWindow KOSWindow{ "KOS-Engine",WIDTH, HEIGHT };
 };
